@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading...</title>
+  <link rel="shortcut icon" href="pics/logo.jpg" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #008686; /* پس‌زمینه هماهنگ با سایت */
+    }
+
+    .loader img {
+      width: 250px;  /* می‌تونی سایز گیف رو تغییر بدی */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <img src="pics/Sandy Loading.gif" alt="Loading...">
+  </div>
+
+  <script>
+    // بعد از ۲ ثانیه انتقال به main-shop
+    setTimeout(() => {
+      window.location.href = "main-shop.html";
+    }, 2000);
+  </script>
+</body>
+</html>

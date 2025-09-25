@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wolcome</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="pics/logo.jpg" type="image/x-icon">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo-wrapper">
+        <img src="pics/logo.jpg" alt="Logo" class="logo-img">
+        <span class="logo-text">SHOPINO.net</span>
+      </div>
+      
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="contact.htm">CONTACT US</a></li>
+          <li><a href="address.htm">OUR ADDRESS</a></li>
+          <li><a href="about.htm">ABOUT US</a></li>
+          <li><a href="#">HOME</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" aria-expanded="false" aria-label="باز / بسته کردن منو">☰</button>
+    </div>
+    <img src="pics/bg.png" alt="" id="bg">
+  </header>
+
+  <div class="intro-container">
+    <h1>Welcome</h1>
+    <p>
+      Elevate your wardrobe with premium fabrics and bold designs.  
+      From everyday essentials to statement pieces, we’ve got you covered.  
+      Shop now and express your style with confidence!
+    </p>
+    <a href="Loading.html" class="try-button">Visit Now</a>
+  </div>
+
+  <!-- تصویر مدل خارج از هدر -->
+  <img src="pics/download (2).png" alt="Model-Image" class="main-IMG">
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+  
+    menuToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('open'); // نمایش یا مخفی کردن منو
+    });
+  </script>
+  
+</body>
+
